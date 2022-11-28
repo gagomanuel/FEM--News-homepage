@@ -1,0 +1,27 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* mobile */
+.dtp {
+    display: hidden;
+}
+.mob{
+    display: block;
+}
+
+@media (min-width: 1440px) {
+    /* desktop */
+    .mob {
+        display: hidden;
+    }
+    .dtp {
+        display: block;
+    }
+}
