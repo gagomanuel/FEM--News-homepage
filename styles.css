@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -8,7 +12,18 @@
 }
 
 
-/* mobile */
+/* Mobile CSS */
+.main-card{
+    width: 100%;
+    border: 1px red dotted;
+}
+.main-img {
+    width: 100%;
+}
+
+
+
+/* MOBILE */
 .dtp {
     display: hidden;
 }
@@ -17,7 +32,9 @@
 }
 
 @media (min-width: 1440px) {
-    /* desktop */
+    /* Desktop CSS */
+    
+    /* DESKTOP */
     .mob {
         display: hidden;
     }
