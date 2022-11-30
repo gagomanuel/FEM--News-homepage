@@ -1,5 +1,18 @@
-* {
-    box-sizing: border-box;
+:root {
+    /* Colors */
+    --Csoft-orange: hsl(35, 77%, 62%);
+    --Csoft-red: hsl(5, 85%, 63%);
+    --Coff-white: hsl(36, 100%, 99%);
+    --Cgrayish-blue: hsl(233, 8%, 79%);
+    --Cdark-greyish-blue: hsl(236, 13%, 42%);
+    --Cvery-dark-blue: hsl(240, 100%, 5%);
+
+    --pSize: 15px;
+
+    /* font size */
+    --lWheigth: 400;
+    --mWheight: 700;
+    --hWheight: 800;
 }
 
 .attribution {
@@ -11,19 +24,23 @@
     color: hsl(228, 45%, 44%);
 }
 
-
-/* Mobile CSS */
-.main-card{
-    width: 100%;
-    border: 1px red dotted;
-}
-.main-img {
-    width: 100%;
+p {
+    color: var(--Cgrayish-blue);
+    font-size: var(--pSize);
 }
 
+.dark-card{
+    background-color: var(--Cvery-dark-blue);
+}
+.dark-card h2{
+    color: var(--Csoft-orange);
+}
+.dark-card article h4{
+    color: var(--Coff-white);
+}
 
 
-/* MOBILE */
+/* mobile */
 .dtp {
     display: hidden;
 }
@@ -32,9 +49,7 @@
 }
 
 @media (min-width: 1440px) {
-    /* Desktop CSS */
-    
-    /* DESKTOP */
+    /* desktop */
     .mob {
         display: hidden;
     }
