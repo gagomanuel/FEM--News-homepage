@@ -25,7 +25,7 @@
 }
 
 p {
-    color: var(--Cgrayish-blue);
+    color: var(--Cdark-greyish-blue);
     font-size: var(--pSize);
 }
 
@@ -37,6 +37,11 @@ p {
 }
 .dark-card article h4{
     color: var(--Coff-white);
+}
+
+
+.num-head{
+    color: var(--Cgrayish-blue)
 }
 
 
