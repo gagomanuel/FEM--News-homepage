@@ -69,6 +69,7 @@ p {
     font-size: var(--pSize);
 }
 
+/* DARK CARD */
 .dark-card{
     background-color: var(--Cvery-dark-blue);
 }
@@ -79,13 +80,21 @@ p {
     color: var(--Coff-white);
 }
 
-
-.num-head{
-    color: var(--Cgrayish-blue)
+/* LIGHT CARD */
+.light-card {
+    display: flex;
+}
+.light-card .light-article .little-img{
+    width: 80%;
+}
+.light-card .light-article .num-head{
+    color: var(--Cgrayish-blue);
+    font-size: 40px;
+    margin-bottom: 0px;
 }
 
 
-/* mobile */
+/* ---- mobile ---- */
 .dtp {
     display: none;
 }
