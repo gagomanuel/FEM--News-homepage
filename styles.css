@@ -16,13 +16,14 @@
 
     --pSize: 15px;
 
-    /* font size */
+    /* fonts  */
     --lWheigth: 400;
     --mWheight: 700;
     --hWheight: 800;
 }
 * {
     box-sizing: border-box;
+    font-family: Inter, sans-serif;
 }
 
 body{
@@ -60,8 +61,9 @@ body{
 }
 
 h1{
+    font-size: xx-large;
     font-weight: var(--hWheight);
-    font-family: Inter;
+    font-weight: bolder;
 }
 
 p {
@@ -69,10 +71,30 @@ p {
     font-size: var(--pSize);
 }
 
+.read-more-btn{
+    background-color: var(--Csoft-red);
+    color: var(--Coff-white);
+    appearance: none;
+    border: none;
+
+    --padTopBot: 10px;
+    padding-top: var(--padTopBot);
+    padding-bottom: var(--padTopBot);
+    padding-left: calc(var(--padTopBot) * 2);
+    padding-right: calc(var(--padTopBot) * 2);
+    letter-spacing: 5px;
+}
+
 /* DARK CARD */
 .dark-card{
+    --margins: 40px;
+
     background-color: var(--Cvery-dark-blue);
+    padding: 20px;
+    margin-top: var(--margins);
+    margin-bottom: var(--margins);
 }
+
 .dark-card h2{
     color: var(--Csoft-orange);
 }
