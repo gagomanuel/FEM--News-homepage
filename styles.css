@@ -47,6 +47,30 @@ body{
     flex-shrink: 0;
 }
 
+.burguer-menu-display{
+    position: fixed;
+    right: 0px;
+    background-color: white;
+    width:70%;
+    height:100%;
+}
+
+.burguer-menu-column{
+    list-style-type: none;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+a {
+    all: unset;
+}
+.burguer-menu-column li {
+    margin-bottom: 20px;
+    color: var(--Cvery-dark-blue);
+    text-decoration: none;
+    appearance: none;
+}
+
 .banner-container{
     background: 50% 50% no-repeat;
     display: flex;

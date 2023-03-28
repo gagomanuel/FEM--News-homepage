@@ -1,8 +1,9 @@
 window.addEventListener("load", function () {
     let burguer_menu_display = document.querySelector(".burguer-menu-display");
+    let burguer_menu_column = document.querySelector(".burguer-menu-column");
     let burger_menu_img = document.querySelector("burguer-menu-img");
     // this is for darkening the 'body' when 
-    let main = document.querySelector("body")
+    let body = document.querySelector("body");
 
 
 });
