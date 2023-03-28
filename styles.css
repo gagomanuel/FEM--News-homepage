@@ -32,13 +32,19 @@ body{
 }
 
 .mob-header {
+    /* position: absolute; */
     display: flex;
+    width: 100%;
+    background-color: white;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+/* body{
+    margin-top: 60px;
+} */
 .burguer-menu-img{
     display: flex;
     width: 40px;
@@ -49,6 +55,7 @@ body{
 
 .burguer-menu-display{
     position: fixed;
+    top:0%;
     right: 0px;
     background-color: white;
     width:70%;
@@ -57,7 +64,7 @@ body{
 
 .burguer-menu-column{
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 90px;
     padding-left: 10px;
 }
 
