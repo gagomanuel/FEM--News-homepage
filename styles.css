@@ -211,7 +211,8 @@ p {
 }
 
 /* capaz mejor cambiar a 1024px? */
-@media (min-width: 1440px) {
+/* estaba en 1440px */
+@media (min-width: 1024px) {
     /* desktop */
     .mob {
         display: none;

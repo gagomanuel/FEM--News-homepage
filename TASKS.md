@@ -1,0 +1,1 @@
+- Hacer que cambien las proporciones de la imagen '.mob-banner' >> crear una clase 'dtp-banner' y que se intercambien al cambiar el @media (min-width: 1024px)
