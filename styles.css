@@ -98,9 +98,8 @@ a {
     text-decoration: none;
     appearance: none;
 }
-/*$ || */
 
-.banner-container{
+.banner-img-container{
     background: 50% 50% no-repeat;
     display: flex;
     width: auto;
@@ -114,7 +113,7 @@ a {
 }
 
 h1{
-    font-size: xx-large;
+    font-size: 2rem;
     font-weight: var(--hWheight);
     font-weight: bolder;
 }
@@ -138,28 +137,46 @@ p {
     padding-left: calc(var(--padTopBot) * 1.7);
     padding-right: calc(var(--padTopBot) * 1.7);
     letter-spacing: 5px;
+
+    width: fit-content;
+    height: fit-content;
 }
 
 /* DARK CARD */
 .dark-card{
     --margins: 40px;
-    --padLats: 10px;
+    /* --padLats: 10px; */
     background-color: var(--Cvery-dark-blue);
     
     padding: 15px;
     margin-top: var(--margins);
     margin-bottom: var(--margins);
+    display: flex;
+    flex-direction: column;
 }
 .dark-card h2{
     color: var(--Csoft-orange);
+    font-size: 1.5rem;
+    margin: 0;    
+}
+.dark-card article {
     margin: auto;
 }
-
 .dark-card article h4{
     color: var(--Coff-white);
+    margin-bottom: 1rem;
 }
 .dark-card article p{
-    margin: auto;
+    margin-top: 0px;
+}
+
+.divider {
+    display: inline-block;
+    margin-top: 1rem;
+    border: 1px solid var(--Cdark-greyish-blue);
+    width: 100%;
+    /* height: 2px; */
+    border-style: inset;
 }
 
 /* LIGHT CARD */
@@ -170,19 +187,17 @@ p {
 .light-article {
     display: flex;
     flex-direction: row;
-    flex-direction: row;
     margin-bottom: 20px;
-    width: 90%;
-    height: fit-content;
+    width: 100%;
+    /* height: fit-content; */
 }
 
 .light-card .light-article .little-img{
-    /* ! */
-    /* flex-basis: 50px; */
+    /* ¿ IMAGEN ? */
+    margin-right: 17px;
+    max-height: 100%;
     width: 40%;
-    aspect-ratio: auto;
-    margin-right: 10px;
-    
+    object-fit: contain;
 }
 .light-txt-sec{
     /* flex-basis: 100px; */
@@ -191,18 +206,18 @@ p {
     flex-direction: column;
 }
 
-.light-card .light-article .num-head{
+.num-head{
     color: var(--Cgrayish-blue);
-    font-size: 40px;
-    margin-bottom: 0px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
     margin-top: 5px;
 }
-.light-card .light-article h4{
+.light-article h4{
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 2px;
 }
 
-/* ---- mobile ---- */
+/* ?---- mobile ---- */
 .dtp {
     display: none;
 }
@@ -210,8 +225,8 @@ p {
     display: block;
 }
 
-/* capaz mejor cambiar a 1024px? */
-/* estaba en 1440px */
+/* $ capaz mejor cambiar a 1024px? */
+/* $ estaba en 1440px */
 @media (min-width: 1024px) {
     /* desktop */
     .mob {
@@ -219,5 +234,67 @@ p {
     }
     .dtp {
         display: block;
+    }
+    /* ----------------- */
+    .burguer-menu-img{
+        width: 60px;
+        height: 60px;
+    }
+    body{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .banner-img-container {
+        margin-bottom: 20px;
+    }
+    .banner-textTitle-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: fit-content;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .banner-pButton-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        /* height: 100%; */
+        margin: 0;
+    }
+    .banner-pButton-container p{
+        margin: 0;
+    }
+    
+    .banner-and-dark-card{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4rem;
+        height: 500px;
+    }
+    /* .mob-banner{
+        
+    } */
+    .banner-img-container{
+        width: 100%;
+        height: 60%;
+    }
+    .banner-imgText-container{
+        padding-right: 1rem;
+    }
+    .dark-card{
+        margin: 0;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .burguer-menu-column{
+        display: block
+    }
+    .light-card {
+        flex-direction: row;
     }
 }
